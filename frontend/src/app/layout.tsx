@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import ChatBot from "@/components/ChatBot";
 import { AnalysisProvider } from "@/context/AnalysisContext";
 
 const geistSans = Geist({
@@ -38,8 +39,12 @@ export default function RootLayout({
               {children}
             </div>
           </main>
+          <ChatBot />
         </AnalysisProvider>
       </body>
     </html>
   );
 }
+Pressing key...Stopping...
+
+Stop Agent
